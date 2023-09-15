@@ -1,0 +1,47 @@
+kubectl create namespace entgbl-kamel-dev
+
+kubectl config set-context --current --namespace=entgbl-kamel-dev
+
+kubectl create configmap maven-settings --from-file=settings.xml
+
+kamel install -n entgbl-kamel-dev --force --registry ghcr.io --organization mysaikumar/camel-k-package --registry-auth-username MySaiKumar --registry-auth-password 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 --build-strategy=pod --maven-settings=configmap:maven-settings/settings.xml
+
+
+
+
+
+
+History
+===================
+ 1 pwd
+   2 dir
+   3 mvn clean package
+   4 cls
+   5 cd C:\Users\vkraft\Desktop\development SOA\Samples\pvfsamples
+   6 cd C:\Users\vkraft\Desktop\development-SOA\Samples\pvfsamples
+   7 dir
+   8 kamel run --namespace=default --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=true&clas...
+   9 kubectl get namespaces
+  10 kamel run --namespace=entgbl-kamel-dev --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=...
+  11 docker login ghcr.io -u MySaiKumar -p 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
+  12 docker login ghcr.io
+  13 docker login ghcr.io
+  14 docker login ghcr.io
+  15 docker login ghcr.io -u MySaiKumar -p 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
+  16 docker login ghcr.io -u mysaikumar -p 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
+  17 docker login ghcr.io
+  18 docker login ghcr.io
+  19 kamel run --namespace=entgbl-kamel-dev --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=...
+  20 history
+  21 kamel run --namespace=entgbl-kamel-dev --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=...
+  22 kamel run --namespace=entgbl-kamel-dev --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=...
+  23 clear
+  24 kubectl get namespace
+  25 kubectl delete namespace entgbl-kamel-dev
+  26 kubectl create namespace entgbl-kamel-dev
+  27 kubectl config set-context --current --namespace=entgbl-kamel-dev
+  28 kubectl create configmap maven-settings --from-file=settings.xml
+  29 kamel install -n entgbl-kamel-dev --force --registry ghcr.io --organization mysaikumar/camel-k-package --registry-auth-username MySaiKumar --regist...
+  30 kamel run --namespace=entgbl-kamel-dev --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=...
+  31 kamel run --namespace=entgbl-kamel-dev --name inew6 -d "file://kafka-utils-0.0.4.jar?targetPath=/etc/camel/resources/kafka-utils-0.0.4.jar&skipPOM=...
+  ====================================================================================================================================================================
